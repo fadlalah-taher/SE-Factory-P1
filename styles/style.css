@@ -1,6 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 input, textarea {
@@ -13,6 +16,7 @@ header {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.squarespace-cdn.com/content/v1/5e4442200ffeee35974d1060/1586049970296-14DH7UEP2UWJREIELJ3K/IMG_9780.JPG?format=2500w');
     background-position: left;
     background-size: cover;
+    max-width: 100%;
 }
 nav > #logo{
     width: 80px;
@@ -297,7 +301,196 @@ nav .menu-item .line{
     font-size: 22px;
     margin-left: 6%;
 }
+/*
+.globalrp-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    margin-top: 5%;
+    font-size: 100%;
+}*/
+#globalrp-section {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    
+}/*
+#globalrp-heading > h3{
+    margin-top: 0;
+    font-size: 40px;
+    color: white;
+}*/
 
+#globalrp-heading{
+    width: 40%;
+   max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#globalrp-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+#globalrp-p{
+    font-size: 24px;
+}
+#globalrp-img{
+    width: 100%;
+    margin: 0;
+}
+#globalrp-img{
+    width: 100%;
+    margin: 0;
+}
+#globalrp-img img {
+    width: 100%;
+}
+
+/*
+#globalrp-secton > .globalrp-heading{
+    width: 40%;
+    max-width: 1100px;
+    font-size: 60px;
+
+}*/
+/* Media Section*/
+#media-section {
+    width: 100%;
+    background-color: rgb(161, 151, 151);
+}
+#media-section h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 35px;
+}
+#media-container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 5px 0;
+    padding-top: 1px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 5%;
+    /*justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;*/
+}
+.media-item {
+    width: 20%;
+   /* padding: 0 5px;*/
+    margin-top: 2%;
+}
+/* Funding Partners*/
+#funding-section {
+    width: 100%;
+}
+#funding-section h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 35px;
+}
+#funding-container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 5px 0;
+    padding-top: 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+#funding-container img{
+    width: 100%;
+}
+/* Stratigic partner*/
+#strategic-section {
+    width: 100%;
+}
+#strategic-section h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 40px;
+    margin-top: 0%;
+}
+#strategic-container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 5px 0;
+    padding-top: 1px;
+    margin: 0 auto;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+}
+.strategic-item img{
+    width: 150%;
+}
+#subscribe-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    padding: 30px;
+    font-size: 32px;
+}
+#subscribe-section p{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-top: -3%;
+}
+#subscribe{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#subscribe:hover{
+    opacity: 0.6;
+}
+footer{
+    padding: 25px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#footer i{
+    letter-spacing: 10px;
+}
+#footer #a{
+    color: #0d0;
+} 
+#footer a{
+    color: white;
+}
 
 @media (max-width: 950px) {    
     .menu-item {
@@ -368,5 +561,49 @@ nav .menu-item .line{
         width: 100%;
         margin: 0;
         align-items: center;
+    }
+    #media-container {
+        width: 100%;
+        max-width: 1140px;
+        padding: 5px 0;
+        padding-top: 1px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20%;
+        flex-wrap: wrap;
+    }
+    .media-item {
+        width: 20%;
+        margin-top: 2%;
+    }
+    #funding-container {
+        width: 80%;
+        max-width: 1140px;
+        padding: 5px 0;
+        padding-top: 1px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    #strategic-container {
+        width: 100%;
+        max-width: 1140px;
+        padding: 5px 0;
+        padding-top: 1px;
+        margin: 0 auto;
+        /*text-align: center;*/
+        display: flex;
+        /*justify-content: space-between;*/
+        align-items: center;
+       margin-left: 5%;
+        
+        flex-wrap: wrap;
+    }
+    .strategic-item img{
+        width: 80%;
+        margin-top: 5%;
     }
 }
