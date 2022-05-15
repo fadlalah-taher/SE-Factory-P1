@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -32,16 +30,21 @@
                 <a class="menu-item">Conatct</a>
                 <div class="dropdown-wrapper">
                     
-                    <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
-                    <!--<div class="menudropdown">
-                        <div>Home</div>
-                        <div>Get Trained</div>
-                        <div>Hire Talent</div>
-                        <div>FAQs</div>
-                        <div>Blog</div>
-                        <div>About Us</div>
-                        <div>Contact</div>
-                    </div>-->
+                    
+                    <span id="span-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="#">Home</a>
+                          <a href="#">Get Trained</a>
+                          <a href="#">Hire talent</a>
+                          <a href="#">FAQs</a>
+                          <a href="#">Blog</a>
+                          <a href="#">About Us</a>
+                          <a href="#">Contact</a>
+                        </div>
+                      </div>
+                      <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
                     <button class="apply-button">Apply Now</button>
                     <div class="dropdown">
                         <a>Full Stack Web Developer</a>
@@ -182,5 +185,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
 </body>
 </html>
