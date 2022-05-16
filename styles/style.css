@@ -500,6 +500,9 @@ footer{
 #footer i{
     letter-spacing: 10px;
 }
+#footer i:hover{
+    opacity: 0.4;
+}
 #footer #a{
     color: #0d0;
 } 
@@ -556,7 +559,7 @@ footer{
     right: 35px;
 }
   }
-  /**/
+
 
 @media (max-width: 950px) {    
     .menu-item {
